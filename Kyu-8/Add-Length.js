@@ -11,3 +11,4 @@
 
 //Solution 1
 
+const addLength = str => str.split(' ').map(x => `${x} ${x.length}`)
