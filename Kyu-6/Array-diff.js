@@ -10,3 +10,10 @@
 
 //Solution 1
 
+function arrayDiff(a, b) {
+    return a.filter(num => !b.includes(num))
+}
+
+// Solution 2
+
+const arrayDiff = (a,b) => a.filter(num => !b.includes(num))
