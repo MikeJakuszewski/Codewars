@@ -13,6 +13,19 @@
 //Solution 1
 
 function order(words){
+    let array = words.split(' ')
+    let sorted = []
+    for(let i = 1; i <= array.length; i++){
+      array.forEach(word => {if(word.includes(i)){
+          sorted.push(word)
+       }})
+    }
+    return sorted.join(' ')
+}
+
+//Solution 2
+
+function order(words){
     let arr = words.split(' ')
     let r = []
   
