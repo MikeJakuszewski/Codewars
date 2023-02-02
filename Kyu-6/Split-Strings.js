@@ -39,3 +39,19 @@ function solution(str){
  
    return res
  }
+
+ //Soltuion 3 -- same as 2 but diff syntax
+
+ function solution(str){
+    let arrStr = str.split('')
+    let newArr = []
+  
+    for(let i=0;i<arrStr.length;i+=2){
+      if(arrStr[i+1]){
+        newArr.push(arrStr[i]+arrStr[i+1])
+      }else{
+        newArr.push(arrStr[i]+'_')
+      }
+    }
+  return newArr
+}
