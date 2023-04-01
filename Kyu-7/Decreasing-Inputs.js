@@ -20,3 +20,4 @@
 
 //Solution 1
 
+const add = (...nums) => Math.round(nums.reduce((acc,val,i) => acc + (val/(i+1)),0))
