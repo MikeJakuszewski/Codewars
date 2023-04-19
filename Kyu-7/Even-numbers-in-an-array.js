@@ -7,6 +7,12 @@
 // ([-22, 5, 3, 11, 26, -6, -7, -8, -9, -8, 26], 2) => [-8, 26]
 // ([6, -25, 3, 7, 5, 5, 7, -3, 23], 1) => [6]
 
+//takese in two params - array, num
+//array of nums - will negatives 
+//num - used as parameter for number of evens we need
+//return number in the order they are presented in
+
+
 //Solution 1
 
 function evenNumbers(array, number) {
