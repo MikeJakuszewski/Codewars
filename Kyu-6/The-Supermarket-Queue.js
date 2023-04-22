@@ -37,11 +37,17 @@
 //will always be number,
 //return number of time
 
-function queueTime(time,reg){
-    
-
-
-}
+function queueTime(customers, n) {
+    let tills = new Array(n)// initialize all tills to 0
+    console.log(tills)
+    for (let i = 0; i < customers.length; i++) {
+      let nextCustomerTime = customers[i];
+      let nextTillIndex = tills.indexOf(Math.min(...tills)); // find the shortest till queue
+      console.log(nextTillIndex)
+      tills[nextTillIndex] += nextCustomerTime; // add the customer's time to the shortest till queue
+    }
+    return Math.max(...tills); // return the maximum till queue time as the total time required
+  }
 
 console.log(queueTime([5,3,4],1), 12)
 console.log(queueTime([10,2,3,3],2), 10)
