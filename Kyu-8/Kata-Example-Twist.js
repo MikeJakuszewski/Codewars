@@ -9,3 +9,9 @@ let websites = []
 for(let i=1;i<=1000;i++){
 websites.push('codewars')
 }
+
+//solution 2
+
+var websites = new Array(1000).fill("codewars");
+
+var websites = []
