@@ -10,3 +10,27 @@
 
 //Solution 1
 
+function maxDiff(list) {
+    if (list.length <=1) return 0
+    let sortedArr = list.sort((a,b) => a-b)
+    let max = sortedArr.slice(-1)
+    let min = sortedArr[0]
+    return +max + Math.abs(min)
+};
+
+//Solution 2
+
+function maxDiff(list) {
+    if (list.length <=1) return 0
+    
+    let max = Math.max(...list)
+    let min = Math.min(...list)
+    return max + Math.abs(min)
+  };
+
+//Solution 3
+
+function maxDiff(list) { 
+    if(!list.length) return 0; 
+    return Math.max(...list) - Math.min(...list); 
+};
