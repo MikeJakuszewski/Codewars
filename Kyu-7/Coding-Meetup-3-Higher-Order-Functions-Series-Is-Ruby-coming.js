@@ -21,5 +21,11 @@
 //Solution 1
 
 function isRubyComing(list) {
-  return list.filter((x) => x.language == "Ruby").length >= 1;
+  return list.some((e) => e.language === "Ruby");
+}
+
+//Solution 2
+
+function isRubyComing(list) {
+  return list.filter((x) => x.language === "Ruby").length >= 1;
 }
