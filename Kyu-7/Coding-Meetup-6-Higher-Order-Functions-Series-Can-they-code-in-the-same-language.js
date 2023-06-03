@@ -28,3 +28,9 @@ function isSameLanguage(list) {
     .map((x) => x.language)
     .every((element) => element === list[0].language);
 }
+
+//Solution 2
+
+function isSameLanguage(list) {
+  return list.every((e) => e.language === list[0].language);
+}
