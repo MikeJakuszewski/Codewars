@@ -21,3 +21,5 @@ function solve(s) {
     return s.toUpperCase();
   }
 }
+
+let positive = arr.map(Math.abs);
