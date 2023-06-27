@@ -15,3 +15,9 @@
 // Some random tests might fail due to a bug in the JavaScript implementation. Simply resubmit if that happens to you.
 
 //Solution 1
+
+function predictAge(age1, age2, age3, age4, age5, age6, age7, age8) {
+  const ages = [age1, age2, age3, age4, age5, age6, age7, age8];
+  let mult = ages.map((age) => age * age).reduce((acc, val) => acc + val, 0);
+  return Math.floor(Math.sqrt(mult) / 2);
+}
