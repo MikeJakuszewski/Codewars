@@ -4,3 +4,7 @@
 // You can assume the input will always be a number.
 
 //Solution 1
+function validateCode(code) {
+  code = code.toString().split("");
+  return code[0] === "1" || code[0] === "2" || code[0] === "3";
+}
