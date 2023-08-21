@@ -14,3 +14,19 @@
 // Good luck!
 
 //Solution 1
+function calculator(a, b, sign) {
+  const signs = "+*-/".split("");
+  if (
+    !(typeof a === "number") ||
+    !(typeof b === "number") ||
+    !signs.includes(sign)
+  )
+    return "unknown value";
+  const calculate = {
+    "+": a + b,
+    "-": a - b,
+    "*": a * b,
+    "/": a / b,
+  };
+  return calculate[sign];
+}
