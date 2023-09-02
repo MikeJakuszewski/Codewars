@@ -58,3 +58,17 @@ Array.prototype.square = function() {
     });
   };
   
+
+// Example of scope
+const globalVar = 'I am a global variable';
+
+function myFunction() {
+  const localVar = 'I am a local variable';
+  
+  console.log(globalVar); // This will log 'I am a global variable'
+  console.log(localVar); // This will log 'I am a local variable'
+}
+
+myFunction(); // This will log 'I am a global variable' and 'I am a local variable' because both globalVar and localVar are in scope inside the function.
+console.log(globalVar); // This will log 'I am a global variable' because globalVar is in scope outside of the function.
+console.log(localVar); // This will throw a ReferenceError because localVar is not in scope outside of the function.
