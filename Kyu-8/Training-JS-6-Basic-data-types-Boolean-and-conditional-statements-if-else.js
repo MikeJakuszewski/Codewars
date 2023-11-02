@@ -38,3 +38,9 @@ function trueOrFalse(val) {
     return "true";
   }
 }
+
+//Solution 2
+
+function trueOrFalse(val) {
+  return val ? true : false;
+}
